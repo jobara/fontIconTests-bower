@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Font Icon: obstacle course: Functional</title>
+        <script type="text/javascript" src="./lib/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="./fontIconTest.js"></script>
+        <link type="text/css" href="./fontIconTest.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Font Icon Obstacle Course - Functional</h1>
+            
+            <p>All of the icons on the page are examples of cases where they contain real content information and would need to be interpreted by an Assistive Technology</p>
+            <form>
+                <label for="languageSelect">Language: </label>
+                <select id="languageSelect" class="languageSelect">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="zh">Chinese</option>
+                </select>
+                <fieldset>
+                    <legend>Font Type:</legend>
+                    <input id="fontType-ligature" class="fontType" type="radio" name="fontType" value="ligature" checked="checked">
+                    <label for="fontType-ligature">Ligature</label>
+                    <input id="fontType-pua" class="fontType" type="radio" name="fontType" value="pua">
+                    <label for="fontType-pua">PUA</label>
+                </fieldset>
+                <fieldset>
+                    <legend>CSS method:</legend>
+                    <input id="cssMethod-class" class="cssMethod" type="radio" name="cssMethod" value="useClass" checked="checked">
+                    <label for="cssMethod-class">Class</label>
+                    <input id="cssMethod-data-icon" class="cssMethod" type="radio" name="cssMethod" value="dataIcon">
+                    <label for="cssMethod-data-icon">data-icon</label>
+                </fieldset>
+            </form>
+        </header>
+        <section class="testSection useClass">
+            <section>
+                <h2>Simple Elements</h2>
+                <a href="http://fluidproject.org" class="icon-spades" data-icon="spade">spade Link</a>
+                <button class="icon-spades" data-icon="spade">spade button</button>
+                <ul>
+                    <li class="icon-spades" data-icon="spade">spade</li>
+                    <li class="icon-spades" data-icon="spade" tabindex=0>spade</li>
+                </ul>
+                <h4 class="icon-spades" data-icon="spade">spade in a header</h4>
+                <div class="icon-spades" data-icon="spade">spade in a div</div>
+                <span class="icon-spades" data-icon="spade">spade in a span</span>
+                <p class="icon-spades" data-icon="spade">spade in a paragraph</p>
+            </section>
+            <section>
+                <h2>Table</h2>
+                <table>
+                    <caption class="icon-spades" data-icon="spade">spade Table Caption</caption>
+                    <thead>
+                        <tr>
+                            <th>Style</th>
+                            <th class="icon-spades" data-icon="spade">spade Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>em</th>
+                            <td><em class="icon-spades" data-icon="spade">spade</em></td>
+                        </tr>
+                        <tr>
+                            <th>b</th>
+                            <td><b class="icon-spades" data-icon="spade">spade</b></td>
+                        </tr>
+                        <tr>
+                            <th>i</th>
+                            <td><i class="icon-spades" data-icon="spade">spade</i></td>
+                        </tr>
+                        <tr>
+                            <th>s</th>
+                            <td><s class="icon-spades" data-icon="spade">spade</s></td>
+                        </tr>
+                        <tr>
+                            <th>small</th>
+                            <td><small class="icon-spades" data-icon="spade">spade</small></td>
+                        </tr>
+                        <tr>
+                            <th>strong</th>
+                            <td><strong class="icon-spades" data-icon="spade">spade</strong></td>
+                        </tr>
+                        <tr>
+                            <th>sub</th>
+                            <td>Regular<sub class="icon-spades" data-icon="spade">spade</sub></td>
+                        </tr>
+                        <tr>
+                            <th>sup</th>
+                            <td>Regular<sup class="icon-spades" data-icon="spade">spade</sup></td>
+                        </tr>
+                        <tr>
+                            <th>u</th>
+                            <td><u class="icon-spades" data-icon="spade">spade</u></td>
+                        </tr>
+                        <tr>
+                            <th>var</th>
+                            <td><var class="icon-spades" data-icon="spade">spade</var></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h2>Inputs</h2>
+                <div>
+                    <label>
+                        Animals:
+                        <input type="text" name="animals" list="animals">
+                        <datalist id="animals">
+                            <option value="dog" class="icon-spades" data-icon="spade">spade Dog</option>
+                            <option value="cat" class="icon-spades" data-icon="spade">spade Cat</option>
+                            <option value="horse" class="icon-spades" data-icon="spade">spade Horse</option>
+                            <option value="elephant" class="icon-spades" data-icon="spade">spade Elephant</option>
+                        </datalist>
+                    </label>
+                </div>
+            
+                <div>
+                    <label for="text-input" class="icon-spades" data-icon="spade">spade Text Field</label>
+                    <input type="text" id="text-input" value="spade" class="icon-spades" data-icon="spade">
+                </div>
+            
+                <div>
+                    <label for="search-input" class="icon-spades" data-icon="spade">spade Search Field</label>
+                    <input type="search" id="search-input" value="Search" class="icon-spades" data-icon="spade">
+                </div>
+            
+                <div>
+                    <label for="radio-input" class="icon-spades" data-icon="spade">spade Radio Button</label>
+                    <input type="radio" id="radio-input">
+                </div>
+            
+                <div>
+                    <label for="checkbox-input" class="icon-spades" data-icon="spade">spade Checkbox</label>
+                    <input type="checkbox" id="checkbox-input">
+                </div>
+            
+                <div>
+                    <label for="select" class="icon-spades" data-icon="spade">spade Select Box</label>
+                    <select id="select">
+                        <option class="icon-spades" data-icon="spade">spade 1</option>
+                        <option class="icon-spades" data-icon="spade">spade 2</option>
+                        <option class="icon-spades" data-icon="spade">spade 3</option>
+                        <option class="icon-spades" data-icon="spade">spade 4</option>
+                    </select>
+                </div>
+            
+                <div>
+                    <textarea class="icon-spades" data-icon="spade">spade in a textarea</textarea>
+                </div>
+            </section>
+            <section>
+                <h2>States</h2>
+                <p>States: active, focus, hover</p>
+                <a href="#_" class="changeState-style icon-spades" data-icon="spade"  data-iconAlt="club">spade Change Styling</a>
+                <a href="#_" class="changeState-icon icon-spades" data-icon="spade"  data-iconAlt="club">spade Change Icon</a>
+            </section>
+            <script type="text/javascript">
+                fontTest.initLangSelect();
+                fontTest.preventDefaultClick("a");
+                fontTest.radioSet(".fontType", fontTest.changeFontType);
+                fontTest.radioSet(".cssMethod", fontTest.changeMethod);
+            </script>
+    </body>
+</html>
