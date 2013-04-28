@@ -31,19 +31,19 @@ var fontTest = {};
             className: "icon-spades",
             dataIconAlt: "club"
         }
-    }
+    };
     
     var encodeText = function (text) {
         return $("<div></div>").html(text).text(); // encodes entity values
     };
     
     fontTest.changeFontType = function (fontType) {
-        var toRem = fontType === "pua" ? fontTypeOpts["ligature"] : fontTypeOpts["pua"];
+        var toRem = fontType === "pua" ? fontTypeOpts.ligature : fontTypeOpts.pua;
         var toAdd = fontTypeOpts[fontType];
         var elms = $("." + toRem.className);
         
         $.each(elms, function (idx, elm) {
-            var elm = $(elm);
+            elm = $(elm);
             var newContent = encodeText(toAdd.content);
             var oldContent = encodeText(toRem.content);
             var altContent = encodeText(toAdd.dataIconAlt);
@@ -60,7 +60,7 @@ var fontTest = {};
             // }
             if (elm.html()) {
                 elm.html(elm.html().replace(oldContent, toAdd.content));
-            };
+            }
             if (elm.val()) {
                 elm.val(elm.val().replace(oldContent, newContent));
             }
