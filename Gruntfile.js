@@ -8,6 +8,9 @@ module.exports = function (grunt) {
                 dest: "build/fontIconTest-concat.js"
             }
         },
+        jshint: {
+            source: ["Gruntfile.js", "js/*.js"]
+        },
         uglify: {
             options: {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
@@ -23,6 +26,7 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks("grunt-contrib-clean");
     grunt.loadNpmTasks("grunt-contrib-concat");
+    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks("grunt-contrib-uglify");
 
     grunt.registerTask("build", ["clean", "concat", "uglify"]);
