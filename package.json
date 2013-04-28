@@ -17,5 +17,8 @@
   ],
   "author": "Justin Obara",
   "license": "MIT",
-  "gitHead": "6ffc07cb69053538573562236b7408a0304544f4"
+  "gitHead": "6ffc07cb69053538573562236b7408a0304544f4",
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  }
 }
