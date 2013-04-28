@@ -1,0 +1,21 @@
+{
+  "name": "fontIconTests-grunt",
+  "version": "0.0.0",
+  "description": "Font Icon Tests. Contains grunt build tasks.",
+  "main": "./js/fontIconTest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jobara/fontIconTests-grunt.git"
+  },
+  "keywords": [
+    "font",
+    "icon",
+    "grunt"
+  ],
+  "author": "Justin Obara",
+  "license": "MIT",
+  "gitHead": "6ffc07cb69053538573562236b7408a0304544f4"
+}
