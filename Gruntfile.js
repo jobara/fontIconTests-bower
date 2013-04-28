@@ -1,7 +1,10 @@
 module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        clean: ["build"],
+        clean: {
+            build: "build",
+            buildResources: "build/fontIconTest-concat.js"
+        },
         concat: {
             dist: {
                 src: ["lib/jquery-1.9.1.min.js", "js/fontIconTest.js"],
@@ -39,6 +42,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-uglify");
     grunt.loadNpmTasks("grunt-contrib-watch");
 
-    grunt.registerTask("build", ["clean", "concat", "uglify"]);
-    grunt.registerTask("default", ["clean"]);
+    grunt.registerTask("build", ["clean", "concat", "uglify", "clean:buildResources"]);
+    grunt.registerTask("default", ["clean:build"]);
 };
