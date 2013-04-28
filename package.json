@@ -20,6 +20,7 @@
   "gitHead": "6ffc07cb69053538573562236b7408a0304544f4",
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-contrib-uglify": "~0.2.0"
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-concat": "~0.3.0"
   }
 }
