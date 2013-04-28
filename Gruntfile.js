@@ -11,6 +11,15 @@ module.exports = function (grunt) {
         jshint: {
             source: ["Gruntfile.js", "js/*.js"]
         },
+        watch: {
+            js: {
+                files: ["Gruntfile.js", "js/*.js"],
+                tasks: ["jshint"],
+                options: {
+                    debounceDelay: 250
+                }
+            }
+        },
         uglify: {
             options: {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
@@ -28,6 +37,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-concat");
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks("grunt-contrib-uglify");
+    grunt.loadNpmTasks("grunt-contrib-watch");
 
     grunt.registerTask("build", ["clean", "concat", "uglify"]);
     grunt.registerTask("default", ["clean"]);
