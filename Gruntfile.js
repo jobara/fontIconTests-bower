@@ -7,7 +7,7 @@ module.exports = function (grunt) {
         },
         concat: {
             dist: {
-                src: ["lib/jquery-1.9.1.min.js", "js/fontIconTest.js"],
+                src: ["lib/jquery/jquery.min.js", "js/fontIconTest.js"],
                 dest: "build/fontIconTest-concat.js"
             }
         },
