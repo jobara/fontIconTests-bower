@@ -1,0 +1,13 @@
+{
+  "name": "fontIconTests-bower",
+  "version": "0.0.0",
+  "main": "js/fontIconTest.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "devDependencies": {
+    "jquery": "1.9.1"
+  }
+}
